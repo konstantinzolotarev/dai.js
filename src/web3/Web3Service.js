@@ -30,7 +30,7 @@ export default class Web3Service extends PrivateService {
       web3.setProvider(window.web3.currentProvider);
       window.web3 = web3;
     } else {
-      web3.setProvider(new Web3.providers.HttpProvider('https://sai-service.makerdao.com/node'));
+      web3.setProvider(new Web3.providers.HttpProvider('https://sai-service.makerdao.com/node')); // test if this travis build works
     }
 
     this.eth = {};
